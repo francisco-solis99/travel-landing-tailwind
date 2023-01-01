@@ -7,13 +7,15 @@ module.exports = {
         ...theme('colors'),
         'primary': '#CC2D4A',
         'secondary': '#8FA206',
-        'tertiary': '#61AEC9'
+        'tertiary': '#61AEC9',
+        'white-gray': '#FCFBFB'
       }),
       textColor: theme => ({
         ...theme('colors'),
         'primary': '#CC2D4A',
         'secondary': '#8FA206',
-        'tertiary': '#61AEC9'
+        'tertiary': '#61AEC9',
+        'gray': '#DADADA'
       }),
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif']
