@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Document</title>
+</head>
+
+<body class="bg-white-700">
+  <header class="hidden md:block bg-white border-b-2 border-slate-200/10">
+    <nav class="py-4 px-5">
+      <ul class="flex justify-between text-primary font-bold">
+        <li>Travel</li>
+        <ul class="flex gap-10">
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Stays</a></li>
+          <li><a href="#">FAQS</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <ul class="flex gap-8">
+          <li class="cursor-pointer">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="#CC2D4A" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </span>
+          </li>
+          <li class="cursor-pointer">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="#CC2D4A" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+              </svg>
+            </span>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+  </header>
+  <div id="tab-bar"></div>
+
+  <main>
+    <section id="hero"
+      class="bg-hero-mobile md:bg-hero-desktop bg-cover bg-center min-h-[60vh] md:min-h-[70vh] relative">
+      <div class="container">
+        <header class="py-5 md:hidden">
+          <label for="" class="m-auto bg-white block w-1/2 relative rounded-3xl shadow-md">
+            <input type="text"
+              class="ml-auto block w-[90%] rounded-3xl bg-white text-md py-1 px-4 text-slate-900 outline-none"
+              placeholder="San Francisco">
+            <span class="absolute top-1/4 left-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="18" height="18"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#CC2D4A" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </span>
+          </label>
+        </header>
+        <div class="w-[25%] pt-20">
+          <h1 class="hidden md:inline text-3xl font-bold">Find More Locations like this
+          </h1>
+          <button
+            class="text-primary bg-white rounded-3xl py-1 px-3 font-semibold absolute top-3/4 left-1/2 -translate-x-1/2 shadow-md md:static md:block md:translate-x-0 md:translate-y-0 md:mt-4 md:min-w-[200px] hover:bg-primary hover:text-white transition-all ease-in duration-300">
+            Explore More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="recomendations" class="mt-8">
+      <div class="container">
+        <h2 class="subtitle">Our Recomendations</h2>
+        <div class="flex gap-8 overflow-x-auto snap-mandatory snap-x">
+          <article class="card">
+            <picture class="block h-[55%]">
+              <img class="card__image"
+                src="https://github.com/TheDiego350z1/Imagenes-Tailwind/blob/master/norway.jpg?raw=true" alt="">
+            </picture>
+            <div class="p-4">
+              <h3 class="text-xl font-bold">Norway</h3>
+              <p class="">Beautiful landscapes</p>
+            </div>
+          </article>
+          <article class="card">
+            <picture class="block h-[55%]">
+              <img class="card__image"
+                src="https://github.com/TheDiego350z1/Imagenes-Tailwind/blob/master/new_york.jpg?raw=true" alt="">
+            </picture>
+            <div class="p-4">
+              <h3 class="text-xl font-bold">New York</h3>
+              <p class="">Concrete Jungle</p>
+            </div>
+          </article>
+          <article class="card">
+            <picture class="block h-[55%]">
+              <img class="card__image"
+                src="https://github.com/TheDiego350z1/Imagenes-Tailwind/blob/master/yosemite.jpg?raw=true" alt="">
+            </picture>
+            <div class="p-4">
+              <h3 class="text-xl font-bold">Yosemite</h3>
+              <p class="">A break from the world</p>
+            </div>
+          </article>
+          <article class="card">
+            <picture class="block h-[55%]">
+              <img class="card__image"
+                src="https://github.com/TheDiego350z1/Imagenes-Tailwind/blob/master/seattle.jpg?raw=true" alt="">
+            </picture>
+            <div class="p-4">
+              <h3 class="text-xl font-bold">Seattle</h3>
+              <p class="">Big City </p>
+            </div>
+          </article>
+          <article class="card">
+            <picture class="block h-[55%]">
+              <img class="card__image"
+                src="https://github.com/TheDiego350z1/Imagenes-Tailwind/blob/master/switzerland.jpg?raw=true" alt="">
+            </picture>
+            <div class="p-4">
+              <h3 class="text-xl font-bold">Switzerland</h3>
+              <p class="">Big city</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="trending" class="mt-8">
+      <div class="container">
+        <h2 class="subtitle">Trending Stays</h2>
+        <div class="grid gap-6 md:grid-cols-[40%_60%] md:grid-rows-[repeat(4, 200px)]">
+          <article class="card__trending bg-chicago-back col-span-full row-span-2">
+            <div class="card__trending-text">
+              <h3 class="text-xl font-bold">Chicago</h3>
+              <p class="mt-1 leading-5">2 rooms, bathroom and kitchen</p>
+            </div>
+          </article>
+          <article class="card__trending bg-LA-back row-span-2">
+            <div class="card__trending-text">
+              <h3 class="text-xl font-bold">Los Angeles</h3>
+              <p class="mt-1 leading-5">4 rooms, 3 bathrooms, kitchen and private pool</p>
+            </div>
+          </article>
+          <article class="card__trending bg-miami-back">
+            <div class="card__trending-text">
+              <h3 class="text-xl font-bold">Miami</h3>
+              <p class="mt-1 leading-5">3 rooms, 2 bathrooms, kitchen and amazing sea view</p>
+            </div>
+          </article>
+          <article class="card__trending bg-bali-back">
+            <div class="card__trending-text">
+              <h3 class="text-xl font-bold">Bali</h3>
+              <p class="mt-1 leading-5">2 rooms, 2 bathrooms, kitchen and private pool</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--start FAQS section -->
+    <section id="faqs" class="mt-8">
+      <div class="container">
+        <h2 class="subtitle">FAQS</h2>
+        <article class="flex flex-col gap-5">
+          <div>
+            <h3 class="text-primary font-semibold mb-2 md:text-xl">Payment Methods</h3>
+            <p class="text-sm md:text-md">We accept VISA, MasterCard, american Express, Paypal and Binance, We accept
+              VISA,
+              MasterCard, american Express, Paypal and Binance</p>
+          </div>
+          <div>
+            <h3 class="text-primary font-semibold mb-2 md:text-xl">Cancellation Policy</h3>
+            <p class="text-sm md:text-md">We accept VISA, mastercard amrican express Paypal land Binance, We accept
+              VISA,
+              MasterCard, american Express, Paypal and Binance</p>
+          </div>
+          <div>
+            <h3 class="text-primary font-semibold mb-2 md:text-xl">Long Stays</h3>
+            <p class="text-sm md:text-md">We accept VISA, MasterCard, american Express, Paypal and Binance, We accept
+              VISA,
+              MasterCard, american Express, Paypal and Binance</p>
+          </div>
+          <div>
+            <h3 class="text-primary font-semibold mb-2 md:text-xl">Cancellation Policy</h3>
+            <p class="text-sm md:text-md">We accept VISA, MasterCard, american Express, Paypal and Binance, We accept
+              VISA,
+              MasterCard, american Express, Paypal and Binance</p>
+          </div>
+          <div>
+            <h3 class="text-primary font-semibold mb-2 md:text-xl">Cancellation Policy</h3>
+            <p class="text-sm md:text-md">We accept VISA, MasterCard, american Express, Paypal and Binance, We accept
+              VISA,
+              MasterCard, american Express, Paypal and Binance</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- end FAQS section -->
+  </main>
+
+  <!-- start footer -->
+  <footer class="mt-8">
+    <div class="container">
+      <h2>About Us</h2>
+      <div>
+        <ul>
+          <li>Investors</li>
+          <li>Jobs</li>
+          <li>Privacy Policy</li>
+          <li>Terms and Conditions</li>
+          <li>Travel, inc</li>
+          <li>Follow Us</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+</body>
+
+</html>

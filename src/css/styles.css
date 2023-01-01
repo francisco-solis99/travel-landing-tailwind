@@ -1,0 +1,37 @@
+@tailwind base; /*Init al the HTML elements without style*/
+@tailwind components; /* Access to all tailwind classes */
+@tailwind utilities; /* Add all the utilities to the proyect and access to them */
+
+@layer base {
+  @font-face {
+    font-family: "Montserrat";
+    src: url('../assets/fonts/Montserrat.ttf') format('truetype');
+    font-display: swap;
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-11/12 mx-auto;
+  }
+
+  .card {
+    @apply min-w-[100px] max-w-[250px] odd:bg-secondary odd:text-white bg-white text-tertiary rounded-xl overflow-hidden drop-shadow-lg snap-center shrink-0;
+  }
+
+  .card__image {
+    @apply w-full h-full object-cover;
+  }
+
+  .card__trending {
+    @apply w-full min-h-[320px] px-4 py-6 bg-cover bg-center text-white rounded-xl shadow-inner;
+  }
+
+  .card__trending-text {
+    @apply w-8/12 md:ml-auto md:text-right
+  }
+
+  .subtitle {
+    @apply text-primary font-bold mb-5 text-3xl;
+  }
+}
