@@ -27,7 +27,15 @@ module.exports = {
         'LA-back': "url('https://github.com/TheDiego350z1/Imagenes-Tailwind/blob/master/LA.jpg?raw=true')",
         'miami-back': "url('https://github.com/TheDiego350z1/Imagenes-Tailwind/blob/master/miami.jpg?raw=true')",
         'bali-back': "url('https://github.com/TheDiego350z1/Imagenes-Tailwind/blob/master/bali.jpg?raw=true')",
-      }
+      },
+      fill: theme => ({
+        ...theme('colors'),
+        'primary': '#CC2D4A',
+      }),
+      stroke: theme => ({
+        ...theme('colors'),
+        'primary': '#CC2D4A',
+      })
     },
   },
   plugins: [],

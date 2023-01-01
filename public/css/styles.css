@@ -631,12 +631,28 @@ video {
 
 /* Access to all tailwind classes */
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .top-1\/4 {
@@ -653,6 +669,10 @@ video {
 
 .left-1\/2 {
   left: 50%;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-span-full {
@@ -748,6 +768,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -762,10 +786,6 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-1 {
@@ -834,6 +854,14 @@ video {
   background-position: center;
 }
 
+.fill-primary {
+  fill: #CC2D4A;
+}
+
+.stroke-primary {
+  stroke: #CC2D4A;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -866,11 +894,6 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pt-20 {
@@ -914,14 +937,14 @@ video {
   color: rgb(204 45 74 / var(--tw-text-opacity));
 }
 
-.text-slate-900 {
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
-}
-
 .text-gray {
   --tw-text-opacity: 1;
   color: rgb(218 218 218 / var(--tw-text-opacity));
+}
+
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .shadow-md {

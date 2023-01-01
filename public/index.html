@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
   <title>TinyTravel</title>
+  <script src="../src/js/main.js" type="module" defer></script>
 </head>
 
 <body class="bg-white-700">
+  <!-- start Header  -->
   <header class="hidden md:block bg-white border-b-2 border-slate-200/10">
     <nav class="py-4 px-5">
       <ul class="flex justify-between text-primary font-bold">
@@ -46,9 +48,59 @@
       </ul>
     </nav>
   </header>
-  <div id="tab-bar"></div>
+  <!-- end header -->
+
+  <div id="tab-bar" class="fixed bottom-0 left-0 right-0 z-10 md:hidden bg-white text-gray">
+    <ul class="flex justify-around py-4">
+      <li class="tab-option" data-opt="0">
+        <span class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-2" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <polyline points="5 12 3 12 12 3 21 12 19 12" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <rect x="10" y="12" width="4" height="4" />
+          </svg>
+        </span>
+      </li>
+      <li class="tab-option" data-opt="1">
+        <span class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="10" cy="10" r="7" />
+            <line x1="21" y1="21" x2="15" y2="15" />
+          </svg>
+        </span>
+      </li>
+      <li class="tab-option" data-opt="2">
+        <span class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+        </span>
+      </li>
+      <li class="tab-option" data-opt="3">
+        <span class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="32" height="32"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="7" r="4" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+          </svg>
+        </span>
+      </li>
+    </ul>
+  </div>
 
   <main>
+    <!-- Start hero section -->
     <section id="hero"
       class="bg-hero-mobile md:bg-hero-desktop bg-cover bg-center min-h-[60vh] md:min-h-[70vh] relative">
       <div class="container">
@@ -78,7 +130,9 @@
         </div>
       </div>
     </section>
+    <!-- end hero section -->
 
+    <!-- start recomendations section -->
     <section id="recomendations" class="mt-8">
       <div class="container">
         <h2 class="subtitle">Our Recomendations</h2>
@@ -136,7 +190,9 @@
         </div>
       </div>
     </section>
+    <!-- end recomentations section -->
 
+    <!-- start trending section -->
     <section id="trending" class="mt-8">
       <div class="container">
         <h2 class="subtitle">Trending Stays</h2>
@@ -168,6 +224,7 @@
         </div>
       </div>
     </section>
+    <!-- emd trending section -->
 
     <!--start FAQS section -->
     <section id="faqs" class="mt-8">
